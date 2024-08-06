@@ -1,1 +1,18 @@
+# config.yaml
 
+data:
+  train_file: "data/processed/slang_list.csv" 
+  val_file: "data/processed/val.csv" 
+
+model:
+  vocab_size: 5000           
+  embedding_dim: 128           
+  hidden_dim: 256
+  output_dim: 2                     
+
+training:
+  batch_size: 32                          
+  learning_rate: 0.001                  
+  num_epochs: 10                         
+
+device: "cuda"                          
